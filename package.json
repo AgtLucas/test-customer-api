@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/test-customer-api/issues"
   },
-  "homepage": "https://github.com/AgtLucas/test-customer-api#readme"
+  "homepage": "https://github.com/AgtLucas/test-customer-api#readme",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-resource": "^1.4.9",
+    "angular-ui-router": "^0.2.17"
+  }
 }

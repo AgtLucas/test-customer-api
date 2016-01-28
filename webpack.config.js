@@ -2,6 +2,10 @@
 
 var path = require('path')
 var webpack = require('webpack')
+var autoprefixer = require('autoprefixer')
+var precss = require('precss')
+var lost = require('lost')
+var rucksack = require('rucksack-css')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -29,7 +33,8 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    }),
+    new ExtractTextPlugin('style.css')
   ],
 
   module: {
@@ -49,5 +54,9 @@ module.exports = {
     resolve: {
       extensions: ['', '.js', '.json']
     }
+  },
+
+  postcss: function () {
+    return [autoprefixer, precss, lost, rucksack]
   }
 }

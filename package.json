@@ -21,6 +21,7 @@
     "angular-resource": "^1.4.9",
     "angular-ui-router": "^0.2.17",
     "lost": "^6.7.1",
+    "normalize-styl": "^3.0.3",
     "precss": "^1.4.0",
     "rucksack-css": "^0.8.5"
   },

@@ -7,8 +7,8 @@
     <div ng-repeat="customer in customers" class="customer__card">
       <a class="customer__card--link" ng-click="getView(customer)">
         <div class="customer__card--content">
-          <p>{{customer.name}}</p>
-          <p>{{customer.email}}</p>
+          <p><i class="material-icons">person</i> {{customer.name}}</p>
+          <p><i class="material-icons">phone</i> {{customer.phone}}</p>
         </div>
       </a>
       <div class="customer__card--actions">

@@ -1,5 +1,8 @@
 'use strict'
 
+/**
+ * Config for `angular config`
+ */
 export default function ($stateProvider) {
   $stateProvider.state('customers', {
     url: '/customers',

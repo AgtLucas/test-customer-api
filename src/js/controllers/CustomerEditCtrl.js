@@ -2,8 +2,8 @@
 
 let CustomerEditCtrl = ['$scope', '$rootScope', '$state', '$stateParams', 'Customer', function ($scope, $rootScope, $state, $stateParams, Customer) {
   $scope.updateCustomer = function () {
-    $scope.movie.$update(function () {
-      $state.go('customer')
+    $scope.customer.$update(function () {
+      $state.go('customers')
     })
   }
 

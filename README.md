@@ -4,7 +4,7 @@
 
 * Node.js 5.4.0+
 
-### Instalation
+### Installation
 
 Install Node dependencies:
 ```bash

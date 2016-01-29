@@ -1,0 +1,15 @@
+<section class="customer__view">
+  <h1>Details for {{customer.name}}</h1>
+
+  <p>{{customer.name}}</p>
+  <p>{{customer.email}}</p>
+  <p>{{customer.phone}}</p>
+  <p>{{customer.address}}</p>
+  <p>{{customer.city}}</p>
+  <p>{{customer.state}}</p>
+  <p>{{customer.zipcode}}</p>
+
+  <div class="customer__view--actions">
+    <a class="btn btn__primary" ui-sref="editCustomer({id:customer.id})">Edit</a>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<a class="btn btn__primary" ui-sref="newCustomer">Add New Customer</a>
+
+<div>
+  <ul>
+    <li ng-repeat="customer in customers">
+      {{customer.name}}
+      <a class="btn btn__primary" ng-click="getView(customer)">View</a>
+      <a class="btn btn__danger" ng-click="deleteCustomer(customer)">Delete</a>
+    </li>
+  </ul>
+</div>

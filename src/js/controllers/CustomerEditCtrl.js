@@ -11,7 +11,7 @@ let CustomerEditCtrl = ['$scope', '$rootScope', '$state', '$stateParams', 'Custo
     $scope.customer = Customer.query(function (data) {
       data.forEach(function (item, key) {
         if (item.id == $stateParams.id) {
-          $scope.movie = item
+          $scope.customer = item
         }
       })
     })

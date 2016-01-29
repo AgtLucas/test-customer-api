@@ -14,13 +14,12 @@ html
   box-sizing inherit
 
 body
+  ff 'Roboto Mono', sans-serif
   fs responsive 14px 21px
   fr 420px 1280px
   line-height 1.5
-
-a
-  color #08c
-  text-decoration none
+  background qw
+  color theshadow
 
 .site__wrapper
   lost-utility clearfix
@@ -34,3 +33,45 @@ a
 
 .site__main
   flex 1
+  padding 40px 0
+
+.site__main--content
+  lost-utility clearfix
+
+.site__header
+  background theshadow
+  padding 10px 0
+
+.site__logo
+  color qw
+  text-decoration none
+  @media any-tablet
+    display block
+    text-align center
+
+.site__footer
+  text-align center
+  padding 10px 0
+
+.customers__header
+  display flex
+  align-items center
+  @media any-desktop
+    flex-direction row
+  @media any-phone
+    flex-direction column
+    text-align center
+  h1
+    color theshadow
+    flex 1
+    @media any-phone
+      margin-bottom 0
+  a
+    color qb
+    @media any-phone
+      margin 20px 0
+    &:hover
+      color theshadow
+
+.the__actions
+  margin-top 20px

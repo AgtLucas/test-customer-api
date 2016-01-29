@@ -1,11 +1,19 @@
-<a class="btn btn__primary" ui-sref="newCustomer">Add New Customer</a>
-
-<div>
-  <ul>
-    <li ng-repeat="customer in customers">
-      {{customer.name}}
-      <a class="btn btn__primary" ng-click="getView(customer)">View</a>
-      <a class="btn btn__danger" ng-click="deleteCustomer(customer)">Delete</a>
-    </li>
-  </ul>
-</div>
+<section class="customers">
+  <header class="customers__header">
+    <h1>Customers</h1>
+    <a ui-sref="newCustomer">Add new customer</a>
+  </header>
+  <div class="customers__card--grid">
+    <div ng-repeat="customer in customers" class="customer__card">
+      <a class="customer__card--link" ng-click="getView(customer)">
+        <div class="customer__card--content">
+          <p>{{customer.name}}</p>
+          <p>{{customer.email}}</p>
+        </div>
+      </a>
+      <div class="customer__card--actions">
+        <i aria-label="Delete" role="button" title="Delete" class="material-icons" ng-click="deleteCustomer(customer)">delete</i>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Customer API</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,300italic,500|Roboto:400,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body class="site__body">
 
   <header class="site__header">
     <div class="site__wrapper">
-      <a ui-sref="customers">Customer API Test</a>
+      <a class="site__logo" ui-sref="customers">Customer API Test</a>
     </div>
   </header>
 
   <main class="site__main">
     <div class="site__wrapper">
-      <div ui-view></div>
+      <div class="site__main--content" ui-view></div>
     </div>
   </main>
 
   <footer class="site__footer">
     <div class="site__wrapper">
-      <small>&copy; - 2016</small>
+      <small>&copy; 2016</small>
     </div>
   </footer>
 </body>

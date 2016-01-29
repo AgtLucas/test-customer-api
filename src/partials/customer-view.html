@@ -1,15 +1,18 @@
 <section class="customer__view">
   <h1>Details for {{customer.name}}</h1>
 
-  <p>{{customer.name}}</p>
-  <p>{{customer.email}}</p>
-  <p>{{customer.phone}}</p>
-  <p>{{customer.address}}</p>
-  <p>{{customer.city}}</p>
-  <p>{{customer.state}}</p>
-  <p>{{customer.zipcode}}</p>
+  <div class="customer__view--card">
+    <p>Name: <span>{{customer.name}}</span></p>
+    <p>Email: <span>{{customer.email}}</span></p>
+    <p>Phone: <span>{{customer.phone}}</span></p>
+    <p>Address: <span>{{customer.address}}</span></p>
+    <p>City: <span>{{customer.city}}</span></p>
+    <p>State: <span>{{customer.state}}</span></p>
+    <p>Zipcode: <span>{{customer.zipcode}}</span></p>
+  </div>
 
-  <div class="customer__view--actions">
+  <div class="the__actions customer__view--actions">
     <a class="btn btn__primary" ui-sref="editCustomer({id:customer.id})">Edit</a>
+    <a class="btn btn__danger" ui-sref="customers">Back</a>
   </div>
 </section>

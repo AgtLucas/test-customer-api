@@ -1,0 +1,17 @@
+// Devices
+mq-device-s-phone = 25em
+mq-device-phone = 36.25em
+mq-device-tablet = 55em
+mq-device-desktop = 80em
+mq-device-x-desktop = 90em
+
+// Media queries
+s-phone = "(max-width: " + (mq-device-s-phone) + ")"
+phone = "(min-width: " + (mq-device-s-phone + 1) + ") and (max-width: " + (mq-device-phone) + ")"
+tablet = "(min-width: " + (mq-device-phone + 1) + ") and (max-width: " + (mq-device-tablet) + ")"
+desktop = "(min-width: " + (mq-device-tablet + 1) + ") and (max-width: " + (mq-device-desktop) + ")"
+x-desktop = "(min-width: " + (mq-device-desktop + 1) + ")"
+
+any-phone = "(max-width: " + (mq-device-phone) + ")"
+any-tablet = "(max-width: " + (mq-device-desktop) + ")"
+any-desktop = "(min-width: " + (mq-device-tablet + 1) + ")"
